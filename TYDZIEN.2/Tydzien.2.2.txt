@@ -1,0 +1,17 @@
+Partitioning Pattern:
+Azure Network Monitor
+Azure Web App
+
+
+Throttling Pattern:
+API Management
+
+
+CQRS + Competing Consumer Pattern:
+Azure Cosmos DB
+Azure Function
+
+
+Static Content Hosting Pattern:
+Azure CDN
+

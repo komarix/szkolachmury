@@ -1,0 +1,18 @@
+Partitioning Pattern:
+-	Rodzidzielenie aplikacji na microserwisy (atomizacja aplikacji), dzięki czemu można łatwo skolowac horyzontalnie,
+-	Bezstanowe micro usługi,  na których można budować HA,
+-	Indywidualność każdej usługi.
+Throttling Pattern:
+-	Dzięki ograniczeniu ilość  żadań połaczeń, zwiększamy  dostępność usługi dla wiekszej ilości klientów,
+-	Zmiejszenie kosztów  względem horyzontalnej skalowalności ( nie musimy jej tak czesto robić, system ma lepszą tolerencje na obciązenie )
+-	Większa ilość reqestów dla połączeń  kontrahentów wystawiajacych nowe promocje.
+
+CQRS + Competing Consumer Pattern:
+-	Zmiejszczenie obciązanie system poprzez rodzielenie zapisu i odczytu
+-	Zwiększenie dostępności serwisów ( statyczne strony i nie zalogowane , teoretczynie nie wymagają zapisywania danych tylko ich odczytu)
+-	Competing Consumer Pattern  może zapewnić nam “kolejwanie” zapytań do zasobów, dzięki
+czemu może nie być żadania zapisania tego samego obkiektu dla konkurencyjnych sesji.
+Static Content Hosting Pattern:
+-	Szybsze prezentowanie zawartości statycznej,
+-	Każdy klient ma  ładowana zawartośc statyczną z bliskej sobie lokalizacji geograficznej,
+-	Obniżenie obciążanie na głownej aplikacji,
